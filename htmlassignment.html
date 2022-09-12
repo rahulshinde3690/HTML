@@ -1,0 +1,349 @@
+<!-- (1) HTML stand for : Hypertext markeup language. -->
+
+<!-- (2) Describe HTML :
+
+An HTML document is a file containing hypertext markup language. HTML code is based on tags, or hidden keywords, which provide instructions for formatting the document. A tag starts with an angle bracket and the 'less than' sign: '<'. The tag ends with an angle bracket and the 'greater than' sign '>'. Tags tell the processing program, often the web browser, what to do with the text. 
+
+For example, to make the word 'Hello' bold, you would use the opening bold tag <b> and then the closing bold tag </b>, like this:
+
+<b>Hello</b>
+
+HTML is defined by the World Wide Web Consortium, an organization that regulates standards for the Internet. Each version of HTML has a set of definitions. Note that HTML is not a programming language. While we often refer to HTML markup as HTML code, programming languages require the processing of logical statements and math. HTML allows the developer to make text documents look engaging and pleasant. In most cases, programming on an HTML document is done with JavaScript. -->
+
+<!-- (3) What is HTML 5 ?
+
+HTML stands for Hyper Text Markup Language. It is used to design web pages using a markup language. HTML is an abbreviation of Hypertext and Markup language. Hypertext defines the link between the web pages. The markup language is used to define the text document within the tag which defines the structure of web pages. HTML 5 is the fifth and current version of HTML. It has improved the markup available for documents and has introduced application programming interfaces(API) and Document Object Model(DOM). 
+
+more details : https://www.geeksforgeeks.org/html5-introduction/ -->
+
+
+<!-- (4) Different type of Doctype in HTML ?
+
+Types of HTML
+The newest version of HTML, which is entering the industry, is HTML 5. HTML can be divided into three categories: transitional, strict, and frameset. These types apply to how HTML is used, not necessarily to the selection of tags.
+
+{Transitional}
+Transitional is the most common type of HTML. It has a flexible syntax, or grammar and spelling component. Over the years, transitional HTML has been used without syntax restrictions, and browsers support a 'best effort' approach to reading the tags. If tags are misspelled, the browsers do not correct web developers' errors, and they display the content anyway. Browsers do not report HTML errors - they simply display what they can. This is the 'best effort' concept.
+
+{Strict}
+The strict type of HTML is meant to return rules into HTML and make it more reliable. For example, the strict type requires closing all tags for all opened tags. This style of HTML is important on phones, where the processing power may be limited. A clean and error-free code helps to load pages faster.
+
+{Frameset}
+Finally, a frameset allows web developers to create a mosaic of HTML documents where multiple documents can be connected into a single screen. This technique is often used to create a menu system. You click on a menu item on the left side of the screen, and only the right side of the screen re-loads. The menu stays in place.
+
+HTML Examples
+Let's take a look at a few examples. To execute the examples, simply create a text document on your desktop called 'test.html'. If you are using a Notepad program, please make sure the extension on the file is .html, not 'test.html.txt'. To do this, use 'Save As' in Notepad and then include in a double-quote the name of the file 'test.html'. On your desktop, you will see an icon with 'test' as the name, and the picture on the icon will have a web browser association.
+ -->
+
+<!-- (5) Name some new feature which were were not present in HTML. But are added into HTML 5 ?
+
+- It has introduced new multimedia features which support audio and video controls by using <audio> and <video> tags.
+- There are new graphics elements including vector graphics and tags.
+- Enrich semantic content by including <header> <footer>, <article>, <section> and <figure> are added.
+- Drag and Drop- The user can grab an object and drag it further dropping it to a new location.
+- Geo-location services- It helps to locate the geographical location of a client.
+- Web storage facility which provides web application methods to store data on the web browser.
+- Uses SQL database to store data offline.
+- Allows drawing various shapes like triangle, rectangle, circle, etc.
+- Capable of handling incorrect syntax.
+- Easy DOCTYPE declaration i.e. <!doctype html>
+- Easy character encoding i.e. <meta charset=”UTF-8″> -->
+
+
+<!-- (6) What is an Anchor tag and how can you open an URL into a new tab whem clicked ?
+
+add url to the href attribute which you want to open on click and to open URL on new tag use target attribute with _blank value to open URL in new tab. Below is an example of anchor tag.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank"> What is an Anchor tag ? </a>
+</body>
+</html> 
+-->
+
+<!-- (7)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 0.5px solid black;
+            border-radius: 0.2em;
+        }
+        #info{
+            background-color: darkgray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <table id="info">
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Ram</th>
+                <th>Physics</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Shyam</th>
+                <th>Math</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Murli</th>
+                <th>Chemistry</th>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html> -->
+
+
+<!-- (8) Define HTML attribute in HTML ?
+
+HTML Attributes
+- All HTML elements can have attributes
+- Attributes provide additional information about elements
+- Attributes are always specified in the start tag
+- Attributes usually come in name/value pairs like: name="value"
+Example : 
+The href Attribute
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+    <a href="https://www.google.com">Visit Google</a> -->
+
+<!-- (9) Define <img> html tag with example.
+
+- The HTML <img> tag is used to embed an image in a web page.
+- images are linked to web pages. 
+- The <img> tag creates a holding space for the referenced image.
+- The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+- The <img> tag has two required attributes:
+    src - Specifies the path to the image
+    alt - Specifies an alternate text for the image -->
+
+<!-- (10) can we modify the attribute's value of the html tag dynamically ?
+
+- Yes,    
+    document.getElementByTagName("tag name").setAttribute("attribute name", "value");
+-->
+
+<!-- (11) How can we comment in HTML ?
+ Only the text inside the {less than ! -- greater than} will be commented out, and the rest of the text inside the tag won't be afected. -->
+
+
+<!-- (12) What are inline element and block element in HTML ?
+
+- A block-level element always starts on a new line and takes up the full width available
+- An inline element does not start on a new line and it only takes up as much width as necessary
+- The <div> element is a block-level and is often used as a container for other HTML elements
+- The <span> element is an inline container used to mark up a part of a text, or a part of a document
+
+    <div>	Defines a section in a document (block-level)
+    <span>	Defines a section in a document (inline) -->
+
+<!-- (13) Can we change inline element into block level element ? 
+
+You can change the visual presentation of an element using the CSS display property. For example, by changing the value of display from "inline" to "block" , you can tell the browser to render the inline element in a block box rather than an inline box, and vice versa. -->
+
+<!-- (14) describe HTML layout structure.
+
+    <header>:This defines a header for a web page
+    <nav>: This defines a container for navigation links
+    <section>: This defines a section in a web page
+    <article>: This is the primary element that contains information about the web page
+    <aside>: The <aside> content is often placed as a sidebar in a document
+    <footer>: This defines a footer for a document or a section
+    <details>: This is used to define additional details
+    <summary>: This defines a heading for the <details> element
+Note : above all tag are called as sementice tag as well because tag name suggest there work. -->
+
+
+<!-- (15) What are <br/> tag in html ?
+
+The <br> tag inserts a single line break. The <br> tag is useful for writing addresses or poems. The <br> tag is an empty tag which means that it has no end tag. -->
+
+<!-- (16) Why meta tags are used in html ?
+
+The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+
+Metadata will not be displayed on the page.
+Metadata is used by browsers, search engines keywords, and other web services. -->
+
+<!-- (17) Explain list element in html ?
+
+The HTML lists tag is used for specifying a list item is ordered, unordered and menu lists. Lists commonly are found in documents, including web pages. They are an easy and effective way to itemize such things as elements, components, or ingredients.
+
+    <ul type="square">  
+        <li>Example of list</li>  
+        <li>Nice list!</li>  
+        <li>Last list item!</li>  
+    </ul>  
+
+    <ol>  
+        <li>Example of list</li>  
+        <li>Nice list!</li>  
+        <li>Last list item!</li>  
+    </ol>  -->
+
+<!-- (18) What is the difference between DIV and SPAN in html ?
+
+DIV : 
+
+The div element is a block-level element, used to divide page content into blocks. A block element is a page element that starts a new line and has a width equal to the entire page or the parent container.
+
+divs used to group related paragraphs, images, headings, and links. 
+
+For example, a three-paragraph article may be enclosed in a div, and a navigation menu containing links might be enclosed in another div. Using divs this way makes it easier to identify different sections of a page and apply styling to them with CSS.
+
+<div id="poem">
+    <p>This is my first poem.</p>
+    <p>This is my second poem.</p>
+    <p>This is my final poem.</p>    
+</div>
+
+SPAN :
+
+The span element is a generic inline element, typically used to apply styling to a portion of inline content. An inline element does not start a new line and only takes up as much space on the page as its content. Span tags are used on small segments of text, links, images, and other HTML elements that appear inline with the surrounding content.
+
+<p>This is a paragraph with <span id=“special-text”>a little something extra</span> inside it.</p> -->
+
+<!-- (19) What is button tag ? Give Example ?
+
+In HTML there are various methods to create clickable buttons. Here you can even create buttons using <input> tag by setting it’s type attribute to button. Listing out the type attribute that can take values:
+
+Types of buttons :
+
+- Submit - It creates the button which automatically submits the form or the document. 
+- Reset - It creates the button which automatically resets the form control to their initial values.
+- Button - It creates the button which is used to trigger the client side script when the user clicks that button. -->
+
+
+<!-- (20) Define forms in HTML ?
+
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. -->
+
+<!-- (21) In how many ways can a heading be written in HTML ?
+
+HTML defines six levels of headings. A heading element implies all the font changes, paragraph breaks before and after, and any white space necessary to render the heading. The heading elements are H1, H2, H3, H4, H5, and H6 with H1 being the highest (or most important) level and H6 the least. -->
+
+<!-- (22) how can we creat hyperlink in html ?
+
+To make a hyperlink in an HTML page, use the <a> and </a> tags, which are the tags used to define the links. The <a> tag indicates where the hyperlink starts and the </a> tag indicates where it ends. Whatever text gets added inside these tags, will work as a hyperlink. Add the URL for the link in the <a href=” ”>.
+
+    <a href=" path location ">team</a> -->
+
+<!-- (23) why do we use required attribut in html ?
+
+The required attribute is a boolean attribute. When present, it specifies that an input field must be filled out before submitting the form. 
+
+Note: The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file. -->
+
+<!-- (24) How can we include google map on a website ?
+
+Get the embed code:
+==========================================
+1. Go to Google maps. In the Search Google Maps text box, type in the address of the location you want to display on your web page.
+2. When the map appears, click on the Share icon.
+3. Select the Embed tab on the Share window.
+4. Click on Copy HTML.
+
+Embed the code in your web page:
+1. Open the web page (in WordPress) where you want to embed the map. Place your cursor in the editing window where you want the map to display.
+
+2. Paste in the code from Google:
+<iframe src=”https://www.google.com/maps/embed?pb=!…” width=”600″ height=”450″ frameborder=”0″ style=”border:0″ allowfullscreen></iframe>
+
+3. Change the code as follows:
+Replace the “<” in “<iframe” with “[um-” at the start of the code and replace “></iframe>” at the end of the code with just “]“.
+
+4. Your map will not display in the editing window; you’ll see only the code. To view the map, save your changes and preview the page in your browser.
+
+NOTE: Similar code changes need to be made when embedding a Google Calendar into your web page.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.15238271494!2d72.68220938081429!3d21.159142501427855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1662562488621!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</html> -->
+
+<!-- (25) What are Web Workers ?
+
+- A web worker is a JavaScript running in the background, without affecting the performance of the page.
+- When executing scripts in an HTML page, the page becomes unresponsive until the script is finished. A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background. -->
+
+<!-- (26) What is SVG elements ?
+
+- SVG stands for Scalable Vector Graphics
+- SVG is used to define graphics for the Web
+- The HTML <svg> element is a container for SVG graphics.
+- SVG has several methods for drawing paths, boxes, circles, text, and graphic images. -->
+
+<!-- (27) Explain canvas ? 
+
+- The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+- The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+- Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+- A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content. -->
+
+<!-- (28) Explain new form element in HTML 5 ?
+
+1. color: This input type allows the user to select a color from a color picker.
+2. date: This input type allows the user to select a date from a drop-down calendar.
+3. time: This input type allows the user to enter a time.
+4. datetime: This input type allows the user to select date and time along with timezone.
+5. datetime-local: This input type allows the user to select both local date and time.
+6. week: This input type allows the user to select week and year from the drop-down calendar.
+7. email: This input type allows the user to enter an e-mail address.
+8. month: This input type allows the user to select a month and year from a drop-down calendar.
+9. number: This input type allows the user to enter a numerical value.
+10. range: This input type allows the user to enter a numerical value within a specified range.
+11. search: This input type allows the user to enter a search string within the input field.
+12. tel: This input type allows the user to enter a telephone number.
+13. url: This input type allows the user to enter the URL. -->
+
+<!-- (29) What is Quirks mode in HTML5?
+
+- Quirks mode means your page is running without a document type declared, the document type is defined at the very top of a page and it denotes how the browser should read the HTML. -->
+
+(30) 
